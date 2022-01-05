@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "773224887221",
+    "project_id": "shayari-mania-6cc43",
+    "storage_bucket": "shayari-mania-6cc43.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:773224887221:android:ffedec22a3788dac1f9ffc",
+        "android_client_info": {
+          "package_name": "com.example.shayarimania"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "773224887221-7asvf0mnu91jgjfubu70d8re2oon6h12.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBeTYUWifzDW66s_M60gfpBBD-py7ZyVSE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "773224887221-7asvf0mnu91jgjfubu70d8re2oon6h12.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

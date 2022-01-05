@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <view
+            android:id="@+id/view"
+            class="androidx.appcompat.widget.AppCompatTextView"
+            android:layout_width="@dimen/_100mdp"
+            android:layout_height="@dimen/_23font_mdp"
+            android:layout_marginTop="10dp"
+
+            android:background="@color/greyBg"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <view
+            android:id="@+id/view1"
+            class="androidx.appcompat.widget.AppCompatImageView"
+            android:layout_width="@dimen/_85mdp"
+            android:layout_height="@dimen/_95mdp"
+
+            android:layout_marginTop="24dp"
+
+            android:background="@color/greyBg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view" />
+
+        <view
+            android:id="@+id/view2"
+            class="androidx.appcompat.widget.AppCompatTextView"
+            android:layout_width="@dimen/_130mdp"
+            android:layout_height="@dimen/_14mdp"
+            android:layout_marginStart="10dp"
+
+            android:layout_marginLeft="10dp"
+
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/greyBg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view1" />
+
+        <view
+            android:id="@+id/view3"
+            class="androidx.appcompat.widget.AppCompatTextView"
+            android:layout_width="@dimen/_130mdp"
+            android:layout_height="@dimen/_14mdp"
+
+            android:layout_marginTop="15dp"
+            android:background="@color/greyBg"
+            app:layout_constraintEnd_toEndOf="@+id/view2"
+            app:layout_constraintStart_toStartOf="@+id/view2"
+            app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+        <view
+            android:id="@+id/view4"
+            class="androidx.appcompat.widget.AppCompatTextView"
+            android:layout_width="@dimen/_40mdp"
+            android:layout_height="@dimen/_14mdp"
+
+            android:layout_marginTop="12dp"
+            android:background="@color/greyBg"
+            app:layout_constraintEnd_toEndOf="@+id/view3"
+            app:layout_constraintStart_toStartOf="@+id/view3"
+            app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

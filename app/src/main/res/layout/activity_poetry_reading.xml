@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/poetImage"
+        android:layout_width="@dimen/_120mdp"
+        android:layout_height="@dimen/_120mdp"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/rahatround"
+        app:civ_border_color="#FF9800"
+        app:civ_border_width="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PoetName" />
+
+    <TextView
+        android:id="@+id/PoetName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/cherry_cream_soda"
+        android:text="Rahat Indori"
+        android:textColor="#CF5933"
+        android:textSize="@dimen/_30font_mdp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.619"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Poem2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="Toofano sa vaar saro"
+        android:textColor="#FF9800"
+        android:textSize="@dimen/_20font_mdp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/Poem1"
+        app:layout_constraintStart_toStartOf="@+id/Poem1"
+        app:layout_constraintTop_toBottomOf="@+id/Poem1" />
+
+    <TextView
+        android:id="@+id/Poem1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Toofano sa vaar saro"
+        android:textColor="#FF9800"
+        android:textSize="@dimen/_20font_mdp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/poetImage" />
+
+    <TextView
+        android:id="@+id/Poem3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="Toofano sa vaar saro"
+        android:textColor="#FF9800"
+        android:textSize="@dimen/_20font_mdp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/Poem2"
+        app:layout_constraintStart_toStartOf="@+id/Poem2"
+        app:layout_constraintTop_toBottomOf="@+id/Poem2" />
+
+    <TextView
+        android:id="@+id/Poem4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="Saelabbo se Aasma karo"
+        android:textColor="#FF9800"
+        android:textSize="@dimen/_20font_mdp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/Poem3"
+        app:layout_constraintStart_toStartOf="@+id/Poem3"
+        app:layout_constraintTop_toBottomOf="@+id/Poem3" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginLeft="47dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginRight="47dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Poem4"
+        app:layout_constraintVertical_bias="0.34"
+        app:srcCompat="@drawable/orangedivider" />
+
+    <Button
+        android:id="@+id/Share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:text="Share with Others"
+        android:textSize="@dimen/_10font_mdp"
+        app:icon="@drawable/share_screen"
+        app:iconGravity="end"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.701" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:text="by:- "
+        android:textColor="#CA4C43"
+        android:textSize="@dimen/_18font_mdp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/PoetName"
+        app:layout_constraintEnd_toStartOf="@+id/PoetName"
+        app:layout_constraintTop_toTopOf="@+id/PoetName" />
+
+    <Button
+        android:id="@+id/copy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Copy Text"
+        android:textSize="@dimen/_10font_mdp"
+        app:icon="@drawable/text_copy"
+        app:layout_constraintBottom_toTopOf="@+id/Share"
+        app:layout_constraintEnd_toStartOf="@+id/Share"
+        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
